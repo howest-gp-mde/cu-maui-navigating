@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Mde.Navigating.ShellWithFlyout.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Mde.Navigating.ShellWithFlyout"
+    Shell.FlyoutBehavior="Flyout" FlyoutWidth="200">
+    
+    <FlyoutItem Title="Town" Route="town" Icon="town.png">
+        <Tab Route="shire" Title="Shire" Icon="shire.png">
+            <ShellContent Route="hobbiton" Title="Hobbiton" Icon="hobbiton.png"
+                          ContentTemplate="{DataTemplate local:HobbitonPage}" />
+        </Tab>
+        <Tab Route="rohan" Title="Rohan" Icon="rohan.png">
+            <ShellContent Route="edoras" Title="Edoras" Icon="edoras.png"
+                          ContentTemplate="{DataTemplate local:EdorasPage}" />
+            <ShellContent Route="hornburg" Title="Hornburg" Icon="hornburg.png"
+                          ContentTemplate="{DataTemplate local:HornburgPage}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Fortress" Route="fortress" Icon="fortress.png">
+        <Tab Route="mordor" Title="Mordor" Icon="mordor.png">
+            <ShellContent Route="baraddur" Title="Barad Dur" Icon="baraddur.png"
+                          ContentTemplate="{DataTemplate local:BaradDurPage}" />
+        </Tab>
+    </FlyoutItem>
+    <MenuItem Text="Help" IconImageSource="help.png" Clicked="Help_Clicked" />
+</Shell>

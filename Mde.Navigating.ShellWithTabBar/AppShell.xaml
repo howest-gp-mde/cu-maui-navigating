@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Mde.Navigating.ShellWithTabBar.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Mde.Navigating.ShellWithTabBar"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <Tab Route="shire" Title="Shire" Icon="shire.png">
+            <ShellContent Route="hobbiton" Title="Hobbiton" Icon="hobbiton.png"
+                          ContentTemplate="{DataTemplate local:HobbitonPage}" />
+        </Tab>
+        <Tab Route="rohan" Title="Rohan" Icon="rohan.png">
+            <ShellContent Route="edoras" Title="Edoras" Icon="edoras.png"
+                          ContentTemplate="{DataTemplate local:EdorasPage}" />
+            <ShellContent Route="hornburg" Title="Hornburg" Icon="hornburg.png"
+                          ContentTemplate="{DataTemplate local:HornburgPage}" />
+        </Tab>
+        <Tab Route="mordor" Title="Mordor" Icon="mordor.png">
+            <ShellContent Route="baraddur" Title="Barad Dur" Icon="baraddur.png"
+                          ContentTemplate="{DataTemplate local:BaradDurPage}" />
+        </Tab>
+    </TabBar>
+</Shell>

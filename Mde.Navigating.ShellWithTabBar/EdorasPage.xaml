@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mde.Navigating.ShellWithTabBar.EdorasPage"
+             Title="You're at Edoras">
+    <VerticalStackLayout>
+        <Label 
+            Text="Edoras" FontSize="Title"
+            Margin="40"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>
