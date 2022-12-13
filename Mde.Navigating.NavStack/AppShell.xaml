@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Mde.Navigating.NavStack.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Mde.Navigating.NavStack"
+    Shell.FlyoutBehavior="Flyout">
+
+    <FlyoutItem Title="Home">
+        <Tab Route="home">
+            <ShellContent ContentTemplate="{DataTemplate local:StartPage}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="About" Route="about">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
+        </Tab>
+    </FlyoutItem>
+
+</Shell>

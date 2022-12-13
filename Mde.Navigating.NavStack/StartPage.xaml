@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mde.Navigating.NavStack.StartPage"
+             Title="Weather Activities">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Start">
+
+            <Label Text="What to do when the weather is..."
+                   Margin="0,30,0,0"
+                   FontSize="Medium" 
+                   HorizontalTextAlignment="Center" />
+
+            <CollectionView x:Name="weatherList">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Button Text="{Binding . }" 
+                                CommandParameter="{Binding . }" 
+                                Margin="5"
+                                FontSize="Medium"
+                                Clicked="OnWeatherClicked" />
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

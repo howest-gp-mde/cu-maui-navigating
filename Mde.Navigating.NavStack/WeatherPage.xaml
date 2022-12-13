@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mde.Navigating.NavStack.WeatherPage">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Start">
+
+            <Label Margin="0,30,0,0"
+                   FontSize="Medium" 
+                   HorizontalTextAlignment="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span>Fun activites to do when it's</Span>
+                        <Span Text=" "></Span>
+                        <Span x:Name="spanWeather" FontSize="Large"></Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Image x:Name="imgWeather" WidthRequest="100" HeightRequest="100"></Image>
+
+            <CollectionView x:Name="activityList">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Button Text="{Binding Name }" 
+                                CommandParameter="{Binding . }" 
+                                Margin="5"
+                                FontSize="Medium"
+                                Clicked="OnActivityClicked" />
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
