@@ -27,8 +27,7 @@
                     <DataTemplate>
                         <Button Text="{Binding Name }" 
                                 CommandParameter="{Binding . }" 
-                                Margin="5"
-                                FontSize="Medium"
+                                Margin="5" Padding="5" FontSize="Medium"
                                 Clicked="OnActivityClicked" />
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
