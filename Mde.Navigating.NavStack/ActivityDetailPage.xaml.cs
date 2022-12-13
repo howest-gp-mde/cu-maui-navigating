@@ -23,6 +23,7 @@ public partial class ActivityDetailPage : ContentPage
         base.OnAppearing();
 
         Title = Activity.Name;
+        imgActivity.Source = $"{Activity.Id}.png";
         txtName.Text = Activity.Name;
         txtDescription.Text = Activity.Description;
     }

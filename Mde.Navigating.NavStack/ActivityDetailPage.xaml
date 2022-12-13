@@ -8,8 +8,9 @@
             Padding="30,0"
             VerticalOptions="Start">
 
+            <Image x:Name="imgActivity" Margin="0,30,0,15" WidthRequest="100" HeightRequest="100"></Image>
+
             <Label x:Name="txtName"
-                   Margin="0,30,0,0"
                    FontSize="Medium" 
                    HorizontalTextAlignment="Center" />
 
