@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mde.Navigating.NavStack.RoutePartial">
+    <VerticalStackLayout HorizontalOptions="Center">
+        <Label x:Name="lblRoute" HorizontalTextAlignment="Center" TextColor="DimGray"></Label>
+        <CollectionView x:Name="navStackView" HorizontalOptions="Center" HeightRequest="25" WidthRequest="300">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Horizontal" ItemSpacing="5" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Label Text="{Binding . }" FontSize="12"
+                           HorizontalTextAlignment="Center" MinimumWidthRequest="80"
+                           BackgroundColor="Beige" Margin="0" Padding="5" ></Label>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>            
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentView>

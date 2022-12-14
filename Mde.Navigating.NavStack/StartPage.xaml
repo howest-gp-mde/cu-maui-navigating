@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Mde.Navigating.NavStack"
              x:Class="Mde.Navigating.NavStack.StartPage"
              Title="Weather Activities">
     <ScrollView>
@@ -8,7 +9,7 @@
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Start">
-
+            
             <Label Text="What to do when the weather is..."
                    Margin="0,30,0,0"
                    FontSize="Medium" 
@@ -24,6 +25,8 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+
+            <local:RoutePartial />
 
         </VerticalStackLayout>
     </ScrollView>

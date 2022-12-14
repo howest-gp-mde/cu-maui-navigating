@@ -22,6 +22,11 @@ public partial class WeatherPage : ContentPage
         set { weather = value; }
     }
 
+    protected override void OnNavigatedTo(NavigatedToEventArgs args)
+    {
+        base.OnNavigatedTo(args);
+    }
+
     protected override void OnAppearing()
     {
         base.OnAppearing();
@@ -31,6 +36,7 @@ public partial class WeatherPage : ContentPage
         spanWeather.Text = Weather.ToString();
         activityList.ItemsSource = _weatherRepository.GetActivitiesForWeather(Weather);
     }
+
 
     private async void OnActivityClicked(object sender, EventArgs e)
     {
