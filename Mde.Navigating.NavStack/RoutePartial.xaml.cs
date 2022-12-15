@@ -21,6 +21,7 @@ public partial class RoutePartial : ContentView
     {
         lblRoute.Text = Shell.Current.CurrentState.Location.ToString();
         navStackView.ItemsSource = Navigation.NavigationStack.Select(page => page?.GetType().Name ?? "[null]");
+        
     }
 
 }

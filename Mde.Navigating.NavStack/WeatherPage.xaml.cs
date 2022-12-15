@@ -47,11 +47,11 @@ public partial class WeatherPage : ContentPage
                 { "activity", activity }
             };
 
-        //await Shell.Current.GoToAsync($"//home/weather/activity", parameters);
+        await Shell.Current.GoToAsync($"//home/weather/activity", parameters);
 
-        var detailPage = new ActivityDetailPage();
-        detailPage.Activity = activity;
+        //var detailPage = new ActivityDetailPage();
+        //detailPage.Activity = activity;
 
-        await Navigation.PushAsync(detailPage);
+        //await Navigation.PushAsync(detailPage);
     }
 }

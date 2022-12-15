@@ -4,7 +4,7 @@
              x:Class="Mde.Navigating.NavStack.RoutePartial">
     <VerticalStackLayout HorizontalOptions="Center">
         <Label x:Name="lblRoute" HorizontalTextAlignment="Center" TextColor="DimGray"></Label>
-        <CollectionView x:Name="navStackView" HorizontalOptions="Center" HeightRequest="25" WidthRequest="300">
+        <CollectionView x:Name="navStackView" HorizontalOptions="Center" HeightRequest="30">
             <CollectionView.ItemsLayout>
                 <LinearItemsLayout Orientation="Horizontal" ItemSpacing="5" />
             </CollectionView.ItemsLayout>

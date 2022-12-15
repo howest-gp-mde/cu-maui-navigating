@@ -33,12 +33,12 @@ namespace Mde.Navigating.NavStack
                 { "type", weather }
             };
 
-            //await Shell.Current.GoToAsync($"//home/weather", parameters);
+            await Shell.Current.GoToAsync($"//home/weather", parameters);
 
-            var weatherPage = new WeatherPage(_weatherRepository);
-            weatherPage.Weather = weather;
+            //var weatherPage = new WeatherPage(_weatherRepository);
+            //weatherPage.Weather = weather;
 
-            await Navigation.PushAsync(weatherPage);
+            //await Navigation.PushAsync(weatherPage);
         }
     }
 }
