@@ -7,7 +7,9 @@
     Shell.FlyoutBehavior="Disabled">
 
     <TabBar>
+        <!-- Title en Icon in de Tab zijn zichtbaar in de navigatie -->
         <Tab Route="shire" Title="Shire" Icon="shire.png">
+            <!-- Let op! Title en Icon in de Shellcontent zijn nergens zichtbaar in app.-->
             <ShellContent Route="hobbiton" Title="Hobbiton" Icon="hobbiton.png"
                           ContentTemplate="{DataTemplate local:HobbitonPage}" />
         </Tab>
