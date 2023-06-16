@@ -12,10 +12,10 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- Display name -->
-		<ApplicationTitle>Mde.Navigating.ShellWithFlyout</ApplicationTitle>
+		<ApplicationTitle>Shell Flyout</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.mde.navigating.shellwithflyout</ApplicationId>
+		<ApplicationId>be.howest.prog.mde.shellwithflyout</ApplicationId>
 		<ApplicationIdGuid>8122b27c-931e-4f89-955d-0bd9b7907d93</ApplicationIdGuid>
 
 		<!-- Versions -->
@@ -32,10 +32,10 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" Color="#ffffff" ForegroundScale="0.65" BaseSize="128,128" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#FFFFFF" BaseSize="128,128" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />

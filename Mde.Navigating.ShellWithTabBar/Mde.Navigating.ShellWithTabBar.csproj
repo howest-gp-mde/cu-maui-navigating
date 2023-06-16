@@ -12,10 +12,10 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- Display name -->
-		<ApplicationTitle>Mde.Navigating.ShellWithTabBar</ApplicationTitle>
+		<ApplicationTitle>Shell Tabs</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.mde.navigating.shellwithtabbar</ApplicationId>
+		<ApplicationId>be.howest.prog.mde.shellwithtabbar</ApplicationId>
 		<ApplicationIdGuid>20d3edd5-c3fa-4e56-979f-e731b2ea59ef</ApplicationIdGuid>
 
 		<!-- Versions -->
@@ -32,10 +32,10 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" Color="#ffffff" ForegroundScale="0.65" BaseSize="128,128" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#FFFFFF" BaseSize="128,128" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
